@@ -2,7 +2,6 @@ import time
 from tqdm import tqdm
 
 import numpy as np
-import dspy
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -11,7 +10,7 @@ import dspy
 from dspy.evaluate import Evaluate
 
 from chapter_3.dspy_structures import IntentSignature
-from utils import create_examples_from_set
+from common.utils import create_examples_from_set
 
 train_val_set = create_examples_from_set('train', n=100) #A
 np.random.shuffle(train_val_set) #B

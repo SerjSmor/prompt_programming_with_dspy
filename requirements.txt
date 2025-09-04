@@ -4,3 +4,4 @@ python-dotenv
 pandas
 datasets
 scikit-learn
+sentence-transformers

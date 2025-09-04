@@ -22,3 +22,5 @@ ATIS_INTENT_MAPPING = {
    'quantity':                    "Flight Quantity Inquiry",
    'restriction':                 "Flight Restriction Inquiry"
 }
+
+GPT_4O_MINI = 'openai/gpt-4o-mini'

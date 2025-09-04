@@ -2,7 +2,7 @@ import dspy
 import pandas as pd
 from datasets import load_dataset
 
-from consts import ATIS_INTENT_MAPPING
+from common.consts import ATIS_INTENT_MAPPING
 
 
 def create_examples_from_set(set_name, n=-1):
