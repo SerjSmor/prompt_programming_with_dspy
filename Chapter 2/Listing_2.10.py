@@ -1,4 +1,6 @@
-dspy.configure_cache( 
+import dspy
+
+dspy.configure_cache(
 
     enable_disk_cache=False,
     enable_memory_cache=False,

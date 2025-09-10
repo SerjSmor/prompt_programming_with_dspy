@@ -1,4 +1,6 @@
 import os
+import dspy
+
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 lm_mini  = dspy.LM(model='gpt-4o-mini', cache=False, temperature=0.0)

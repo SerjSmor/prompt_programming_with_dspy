@@ -1,5 +1,7 @@
 import os
+
 from dotenv import load_dotenv
+import dspy
 
 load_dotenv()
 print(os.environ['OPENAI_API_KEY'])
