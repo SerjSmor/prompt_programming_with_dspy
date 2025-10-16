@@ -1,10 +1,8 @@
 import dspy
 
 dspy.configure_cache(
-
     enable_disk_cache=False,
     enable_memory_cache=False,
-    enable_litellm_cache=False
 )
 lm = dspy.LM('openai/gpt-4o', cache=True, temperature=0.99) 
 dspy.configure(lm=lm)
