@@ -4,8 +4,6 @@ import dspy
 import pydantic
 from pydantic import Field
 
-# Define the model for a single contact
-
 class Answer(pydantic.BaseModel):
     reasoning: str = Field(description="Reasoning under 10 words")
     answer: str
