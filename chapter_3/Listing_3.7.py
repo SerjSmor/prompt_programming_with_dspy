@@ -1,8 +1,9 @@
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
+load_dotenv()
 
 model = 'gpt-4o-mini'
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 client = OpenAI()
 system_prompt = f'''
 You are an expert of customer service intent classification. Your task is to classify the intent of customer messages of an airline company into one of the provided labels.                
