@@ -8,6 +8,9 @@ from datasets import load_dataset
 from chapter_3.openai_structures import classify_message_prompt
 from chapter_4.evaluate_dspy import validate_answer
 from common.consts import ATIS_INTENT_MAPPING
+from common.utils import create_examples_from_set
+
+dev_set = create_examples_from_set('test', 10)
 
 
 def evaluate_openai_manual_prompt(system_prompt, dev_set, unique_intents):
@@ -40,4 +43,4 @@ if __name__ == '__main__':
         Input: customer message
         Output: One of the following classes: {",".join(unique_intents)}'''
 
-    evaluate_openai_manual_prompt(system_prompt, dev_set, )
+    evaluate_openai_manual_prompt(system_prompt, dev_set, unique_intents)

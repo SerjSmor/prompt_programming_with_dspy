@@ -84,7 +84,9 @@ def evaluate_with_classification_report():
     print(classification_report(groundtruths, predictions)) #D
 
 
-overall_score = evaluate_baseline(dev_set, num_threads=10)
+if __name__ == '__main__':
+
+    overall_score = evaluate_baseline(dev_set, num_threads=10)
 
 
 

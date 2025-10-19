@@ -4,6 +4,7 @@ import time
 from time import sleep
 import dspy
 from tqdm import tqdm
+
 lm = dspy.LM("mistral/mistral-tiny")
 dspy.settings.configure(lm=lm)
 
@@ -15,12 +16,12 @@ scores = []
 # Running predictions and saving scores
 start_time = time.time()
 for example in tqdm(examples):
-   sleep(1)
-   prediction = classifier(**example.inputs())
-   score = validate_answer(example, prediction)
-   scores.append(score)
+    sleep(1)
+    prediction = classifier(**example.inputs())
+    score = validate_answer(example, prediction)
+    scores.append(score)
 
 # Calculate average score
 end_time = time.time()
 average_score = sum(scores) / len(scores)
-print(f"average score: {average_score}, total time: {end_time-start_time}")
+print(f"average score: {average_score}, total time: {end_time - start_time}")
